@@ -195,14 +195,14 @@ def compress_pdf(input_file, output_file, quality=30):
 
 def run_scraping_task(url, ssa, site_id, domain_name):
     # Determine the API URL based on the domain in the URL
-    if domain_name == "projectwe.com":
-        api_url = "https://projectwe.com/api/v1/langchain/pdf-upload-gallery"
-    elif domain_name == "mojomosaic.xyz":
-        api_url = "https://mojomosaic.xyz/api/v1/langchain/pdf-upload-gallery"
+    if domain_name == "website1.com":
+        api_url = "your API URL with domain name"
+    elif domain_name == "website2.com":
+        api_url = "your API URL with domain name"
     else:
         return jsonify({"error": "Unsupported domain"}), 400
 
-    token = "be086981-630f-4a1a-8c47-712a9e128e55"
+    token = "your_token"
 
     # Proceed with the scraping and uploading process
     scraper = WebScraper(url)
